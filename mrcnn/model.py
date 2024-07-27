@@ -1007,12 +1007,6 @@ def data_generator(dataset, config, batch_size, augmentation=None, use_mini_mask
 ############################################################
 #  MaskRCNN Class
 ############################################################
-import tensorflow as tf
-from tensorflow.keras import layers as KL
-from tensorflow.keras import models as KM
-from tensorflow.keras import backend as K
-import numpy as np
-
 class MaskRCNN():
     
     def __init__(self, mode, config, model_dir):
