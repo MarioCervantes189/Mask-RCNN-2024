@@ -20,7 +20,7 @@ import tensorflow as tf
 from tensorflow.keras import layers as KL
 from tensorflow.keras import models as KM
 from tensorflow.keras import backend as K
-from tensorflow.keras.engine import Layer as KE_Layer
+from tensorflow.keras.layers import Layer as KE_Layer
 from distutils.version import LooseVersion
 from mrcnn import utils
 
