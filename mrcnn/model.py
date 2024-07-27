@@ -235,7 +235,7 @@ def log2_graph(x):
     return tf.math.log(x) / tf.math.log(tf.constant(2.0, dtype=x.dtype))
 
 
-class PyramidROIAlign(KE.Layer):
+class PyramidROIAlign(KE_Layer):
     def __init__(self, pool_shape, **kwargs):
         super(PyramidROIAlign, self).__init__(**kwargs)
         self.pool_shape = tuple(pool_shape)
@@ -384,7 +384,7 @@ def detection_targets_graph(proposals, gt_class_ids, gt_boxes, gt_masks, config)
 
     return rois, roi_gt_class_ids, deltas, masks
 
-class DetectionTargetLayer(KE.Layer):
+class DetectionTargetLayer(KE_Layer):
 
     def __init__(self, config, **kwargs):
         super(DetectionTargetLayer, self).__init__(**kwargs)
@@ -506,7 +506,7 @@ def refine_detections_graph(rois, probs, deltas, window, config):
     detections = tf.pad(detections, [(0, gap), (0, 0)], "CONSTANT")
     return detections
 
-class DetectionLayer(KE.Layer):
+class DetectionLayer(KE_Layer):
 
     def __init__(self, config=None, **kwargs):
         super(DetectionLayer, self).__init__(**kwargs)
