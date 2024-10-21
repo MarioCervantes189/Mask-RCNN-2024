@@ -25,8 +25,8 @@ from distutils.version import LooseVersion
 from mrcnn import utils
 
 # Check TensorFlow and Keras versions
-assert LooseVersion(tf.__version__) >= LooseVersion("1.3")
-assert LooseVersion(tf.keras.__version__) >= LooseVersion('2.0.8')
+assert LooseVersion(tf.__version__) >= LooseVersion("2.14.0")
+assert LooseVersion(tf.keras.__version__) >= LooseVersion('2.14.0')
 
 ############################################################
 #  Utility Functions

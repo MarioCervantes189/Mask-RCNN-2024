@@ -17,7 +17,7 @@ import numpy as np
 import cv2
 
 # Root directory of the project
-ROOT_DIR = os.path.abspath("../../")
+ROOT_DIR = os.path.abspath("/home/mcc/Escritorio/Repositorios mario/MaskRCNNTF2.14/Mask-RCNN-2024")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)  # To find local version of the library
